@@ -10,7 +10,17 @@ public class Contains {
      * @param target the value that the method should be searching for.
      * @return true if arr contains target, false otherwise.
      */
-    public boolean arrayContains(int[] arr, int target){
-        return false;
+    boolean match;
+     public boolean arrayContains(int[] arr, int target){
+        
+        for(int i = 0; i < arr.length; i++){
+            if(target != arr[i]){
+                 match = false;
+            }else{
+                 match = true;
+                 break;
+            }
+        }
+        return match;
     }
 }
